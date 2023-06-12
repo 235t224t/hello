@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class NumberGuessingGame {
+public class App {
     public static void main(String[] args) {
         int targetNumber = 42;  // 設定する数（例として42を使用）
         int maxGuesses = 5;    // ユーザが入力できる回数
