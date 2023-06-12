@@ -18,8 +18,11 @@ public class App {
                 System.out.println("当たり！");
                 break;
             } else {
-                if (Math.abs(userGuess - targetNumber) >= 20) {
-                    System.out.println("20以上差があります。");
+                int dif = userGuess - targetNumber;
+                if (dif >= 20) {
+                    System.out.println("予想のほうが20以上大きいです");
+                } else if (dif <= -20) {
+                    System.out.println("予想のほうが20以上小さいです");
                 } else {
                     if (userGuess > targetNumber) {
                         System.out.println("入力した数は設定された数より大きいです。");
